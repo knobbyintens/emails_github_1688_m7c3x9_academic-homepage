@@ -1,0 +1,16 @@
+{% assign post = include.post %}
+<div class="archive__item">
+  <h2 class="archive__item-title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+  {% if post.venue %}
+    <p class="archive__item-venue"><i>{{ post.venue }}</i></p>
+  {% endif %}
+  <p class="archive__item-excerpt">{{ post.excerpt }}</p>
+  <div class="archive__item-links">
+    {% if post.paperurl %}<a class="btn" href="{{ post.paperurl }}">Paper</a>{% endif %}
+    {% if post.slidesurl %}<a class="btn" href="{{ post.slidesurl }}">Slides</a>{% endif %}
+    {% if post.bibtexurl %}<a class="btn" href="{{ post.bibtexurl }}">BibTeX</a>{% endif %}
+    {% if post.codeurl %}<a class="btn btn--info" href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>{% endif %}
+  </div>
+</div>

@@ -1,0 +1,16 @@
+title: Maria Hernandez
+author: Maria Hernandez
+description: Personal academic website
+baseurl: ""
+url: "https://mariacodes.dev"
+markdown: kramdown
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: archive-single
