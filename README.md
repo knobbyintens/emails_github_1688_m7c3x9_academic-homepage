@@ -1,14 +1,11 @@
-# Maria Hernandez - Academic Website
+# Ronald Cook - Academic Homepage
 
-Static Jekyll site for my personal academic homepage.
+Jekyll-compatible personal academic website.
 
-- `_publications/` holds one Markdown record per publication.
-- `_includes/archive-single.html` renders the publication card, including the
-  optional `codeurl` "Code" link.
-- `_config.yml` defines the publications collection.
+Publication records live in `_publications/`, one Markdown file per paper.
+Each record uses YAML front matter with `title`, `venue`, `citation` and an
+optional `codeurl`. The `_includes/archive-single.html` template renders a
+"Code" button when `codeurl` is present and non-empty.
 
-## Local development
-
-```bash
-bundle exec jekyll serve
-```
+To publish a paper, add a file under `_publications/` and commit it to the
+`main` branch.

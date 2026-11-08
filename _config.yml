@@ -1,16 +1,8 @@
-title: Maria Hernandez
-author: Maria Hernandez
-description: Personal academic website
+title: Ronald Cook
+description: Academic homepage of Ronald Cook
 baseurl: ""
-url: "https://mariacodes.dev"
-markdown: kramdown
-collections:
-  publications:
-    output: true
-    permalink: /publication/:path/
-defaults:
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: archive-single
+url: "https://example.org"
+theme: minima
+header_pages:
+  - index.md
+  - publications.md
